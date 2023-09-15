@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: rgb(172, 171, 171);
+        }
+        main {
+            background-color: white;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 5vh;
+            padding: 1%;
+            border-radius: 8px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.419);
+        }
+        main h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input {
+            font-size: 1.13em;
+            padding: 3px;
+            margin: 8px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.189);
+        }
+
+        #idMensagem {
+            font-size: large;
+            margin-top: 10px;
+            width: 60.4%;
+            height: 150px;
+            text-align: justify;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.189);
+        }
+
+        #idEnviar{
+            display: block;
+            margin-left: 19.51%;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Contato</h1>
+        <form action="">
+            <input type="text" name="Nome" id="idNome" placeholder="Nome Completo:" size="35" minlength="2" autocomplete="off" required>
+
+            <input type="email" name="Email" id="idEmail" placeholder="E-Mail:" size="35" minlength="2" autocomplete="on" required>
+            
+            <input type="text" name="Empresa" id="idEmpresa" placeholder="Empresa/Organização:" size="35">
+
+            <input type="tel" name="Telefone" id="idTelefone" placeholder="Telefone:" size="35" >
+
+            <input list="idMotivo" size="35" placeholder="Motivo de Contato:" required>
+            <datalist id="idMotivo">
+                <option value="Elogio">
+                <option value="Problema com Produto">
+                <option value="Reclamação">
+                <option value="Sugestão">
+                <option value="Outro">
+            </datalist>
+
+            <textarea name="Mensagem" id="idMensagem" placeholder="Mensagem:"></textarea>
+
+            <input type="submit" value="Enviar" id="idEnviar">
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: rgb(172, 171, 171);
+        }
+        main {
+            background-color: white;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 5vh;
+            padding: 1%;
+            border-radius: 8px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.419);
+        }
+        main h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+
+        label {
+            display: block;
+            text-align: left;
+            margin-left: 31%;
+        }
+
+        input {
+            font-size: 1.13em;
+            padding: 3px;
+            margin-bottom: 8px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.189);
+        }
+
+        #idSubmit {
+            display: block;
+            margin-left: 31%;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Login</h1>
+
+        <form action="">
+            <label for="User">Usuário:</label>
+            <input type="text" name="User" id="idUser" required minlength="2">
+
+            <label for="Pass">Senha:</label>
+            <input type="password" name="Pass" id="idPass" required minlength="8" autocomplete="off">
+
+            <input type="submit" value="Entrar" id="idSubmit">
+        </form>
+    </main>
+</body>
+</html>

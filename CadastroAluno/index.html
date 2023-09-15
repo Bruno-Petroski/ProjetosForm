@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: rgb(172, 171, 171);
+        }
+        main {
+            background-color: white;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            padding: 1%;
+            border-radius: 8px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.419);
+        }
+        main h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+
+        label {
+            display: block;
+            text-align: left;
+            margin-left: 19.5%;
+            font-size: 1.2em;
+            margin-bottom: 2px;
+        }
+
+        input {
+            font-size: 1.13em;
+            padding: 3px;
+            margin-bottom: 8px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.189);
+        }
+        
+        #idNascimento, #idSerie {
+            display: block;
+            text-align: left;
+            margin-left: 19.5%;
+        }
+
+        #idGen, #idChe{
+            display: block;
+            text-align: left;
+            margin-left: 19.5%;
+        }
+
+        h2{
+            font-weight: normal;
+            font-size: 1.2em;
+        }
+
+        #idEscolhaG, #idCheck {
+            display: inline;
+            margin: 0px;
+            
+        }
+        
+        #idMasc, #idFem {
+            box-shadow: none
+        }
+
+        #idChe{
+            margin-top: 1.5%;
+            margin-bottom: 1.5%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Cadastro do Aluno</h1>
+        <form action="">
+            <label for="Nome">Nome:</label>
+            <input type="text" name="Nome" id="idNome" size="35" minlength="2" autocomplete="off" required>
+
+            <label for="SobreNome">Sobrenome:</label>
+            <input type="text" name="SobreNome" id="idSobreNome" size="35" minlength="2" autocomplete="off" required>
+
+            <label for="Nascimento">Data de Nascimento:</label>
+            <input type="date" name="Nascimento" id="idNascimento" min="2000-01-01" max="2017-12-31" required>
+
+            <label for="Endereço">Endereço:</label>
+            <input type="text" name="Endereço" id="iNomde do Pai" size="35" minlength="2" autocomplete="off" required>
+
+            <label for="NomeDoPai">Nome do Pai:</label>
+            <input type="text" name="NomeDoPai" id="idNomeDoPai" size="35" minlength="2" autocomplete="off" required>
+
+            <label for="NomeDaMãe">Nome da Mãe:</label>
+            <input type="text" name="NomeDaMãe" id="idNomeDaMãe" size="35" minlength="2" autocomplete="off" required>
+
+            <label for="Email">E-mail:</label>
+            <input type="email" name="Email" id="idEmail" size="35" minlength="2" autocomplete="on" required >
+
+            <label for="Tel">Telefone:</label>
+            <input type="tel" name="Tel" id="idTel" size="35" minlength="2" autocomplete="off" required>
+
+            <label for="Serie">Serie:</label>
+            <input type="number" name="Serie" id="idSerie" min="1" max="9" autocomplete="off" required>
+
+            
+            <div id="idGen">
+                <h2>Genero:</h2>
+                <input type="radio" name="Genero" id="idFem" checked>
+                <label for="Genero" id="idEscolhaG">Femenino</label>
+            </div>
+
+            <div id="idGen">
+                <input type="radio" name="Genero" id="idMasc">
+                <label for="Genero" id="idEscolhaG">Masculino</label>
+            </div>
+            
+            <div id="idChe">
+                <h2>Necessidades Especiais:</h2>
+                <input type="checkbox" name="DefA" id="idCheck">
+                <label for="DefA" id="idCheck">Deficiência Auditiva</label>
+                <br>
+                <input type="checkbox" name="DefM" id="idCheck">
+                <label for="DefM" id="idCheck">Deficiência Motora</label>
+                <br>
+                <input type="checkbox" name="DefV" id="idCheck">
+                <label for="DefV" id="idCheck">Deficiência Visual</label>
+                <br>
+                <input type="checkbox" name="DefC" id="idCheck">
+                <label for="DefC" id="idCheck">Deficiência Cerebral</label>
+                <br>
+                <input type="checkbox" name="PerA" id="idCheck">
+                <label for="PerA" id="idCheck">Perturbação do Espectro Autista</label>
+                <br>
+                <input type="checkbox" name="PerFP" id="idCheck">
+                <label for="PerFP" id="idCheck">Perturbação do Foro Psicológico</label>
+                <br>
+                <input type="checkbox" name="PerA" id="idCheck">
+                <label for="PerA" id="idCheck">Perturbação de Aprendizagem</label>
+                <br>
+                <input type="checkbox" name="AltasH" id="idCheck">
+                <label for="AltasH" id="idCheck">Altas Habilidades</label>
+                
+            </div>
+
+            <input type="submit" value="Salvar">
+            <input type="reset" value="Limpar Tela">
+        </form>
+    </main>
+</body>
+</html>
